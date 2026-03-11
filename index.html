@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Satisfacción - Antigravity</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Encuesta para estudiantes del curso de Antigravity. Comparte tu opinión para ayudarnos a mejorar.">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="survey-container">
+        <header>
+            <h1>Antigravity</h1>
+            <p class="subtitle">Ayúdanos a mejorar el curso con tu opinión</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="id_estudiante">ID del Estudiante</label>
+                <input type="text" id="id_estudiante" name="id_estudiante" placeholder="Ej. ALUMNO-123" required>
+            </div>
+
+            <div class="form-group">
+                <label>Nivel de Satisfacción (1 al 5)</label>
+                <div class="rating-group">
+                    <label class="rating-option">
+                        <input type="radio" name="nivel_satisfaccion" value="1" required>
+                        <span class="rating-label">1</span>
+                    </label>
+                    <label class="rating-option">
+                        <input type="radio" name="nivel_satisfaccion" value="2">
+                        <span class="rating-label">2</span>
+                    </label>
+                    <label class="rating-option">
+                        <input type="radio" name="nivel_satisfaccion" value="3">
+                        <span class="rating-label">3</span>
+                    </label>
+                    <label class="rating-option">
+                        <input type="radio" name="nivel_satisfaccion" value="4">
+                        <span class="rating-label">4</span>
+                    </label>
+                    <label class="rating-option">
+                        <input type="radio" name="nivel_satisfaccion" value="5">
+                        <span class="rating-label">5</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Claridad del Contenido (1 al 5)</label>
+                <div class="rating-group">
+                    <label class="rating-option">
+                        <input type="radio" name="claridad_contenido" value="1" required>
+                        <span class="rating-label">1</span>
+                    </label>
+                    <label class="rating-option">
+                        <input type="radio" name="claridad_contenido" value="2">
+                        <span class="rating-label">2</span>
+                    </label>
+                    <label class="rating-option">
+                        <input type="radio" name="claridad_contenido" value="3">
+                        <span class="rating-label">3</span>
+                    </label>
+                    <label class="rating-option">
+                        <input type="radio" name="claridad_contenido" value="4">
+                        <span class="rating-label">4</span>
+                    </label>
+                    <label class="rating-option">
+                        <input type="radio" name="claridad_contenido" value="5">
+                        <span class="rating-label">5</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Aplicabilidad Práctica (1 al 5)</label>
+                <div class="rating-group">
+                    <label class="rating-option">
+                        <input type="radio" name="aplicabilidad_practica" value="1" required>
+                        <span class="rating-label">1</span>
+                    </label>
+                    <label class="rating-option">
+                        <input type="radio" name="aplicabilidad_practica" value="2">
+                        <span class="rating-label">2</span>
+                    </label>
+                    <label class="rating-option">
+                        <input type="radio" name="aplicabilidad_practica" value="3">
+                        <span class="rating-label">3</span>
+                    </label>
+                    <label class="rating-option">
+                        <input type="radio" name="aplicabilidad_practica" value="4">
+                        <span class="rating-label">4</span>
+                    </label>
+                    <label class="rating-option">
+                        <input type="radio" name="aplicabilidad_practica" value="5">
+                        <span class="rating-label">5</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="comentarios_adicionales">Comentarios Adicionales</label>
+                <textarea id="comentarios_adicionales" name="comentarios_adicionales" placeholder="Tus sugerencias o comentarios..." required></textarea>
+            </div>
+
+            <button type="submit" id="submit-button">Enviar Encuesta</button>
+        </form>
+
+        <div id="success-message" class="success-message">
+            <div style="font-size: 4rem; margin-bottom: 20px;">🚀</div>
+            <h2>¡Gracias por participar!</h2>
+            <p>Tus respuestas han sido enviadas correctamente. Valoramos mucho tu opinión sobre el curso de Antigravity.</p>
+            <button onclick="location.reload()" style="background: transparent; border: 1px solid var(--primary-red); color: var(--primary-red); margin-top: 30px; width: auto; padding: 10px 30px;">Enviar otra respuesta</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

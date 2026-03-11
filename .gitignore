@@ -1,0 +1,9 @@
+# Directorios de sistema y herramientas
+.gemini/
+.agents/
+.agent/
+_agents/
+_agent/
+tmp/
+.DS_Store
+Thumbs.db
